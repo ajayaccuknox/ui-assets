@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Email Template</title>
+	</head>
+	<link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
+	<style>
+		body {
+			background-color: #b6bfce;
+			margin: 0;
+			font-family: "Inter";
+		}
+		.main-body {
+			position: absolute;
+			left: 50%;
+			top: 30%;
+			width: 700px;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			background-color: #fff;
+		}
+		.title-image {
+			display: grid;
+			justify-content: center;
+			margin: 20px 0px;
+		}
+		.title-text h3 {
+			text-align: center;
+			font-weight: 900;
+		}
+		.body-content {
+			padding: 20px;
+		}
+		.title-image img {
+			width: 180px;
+		}
+		ul {
+			list-style-type: none;
+		}
+		ul li {
+			padding: 5px 0px;
+			font-size: 15px;
+		}
+		.main-content {
+			background-color: #f3f3f3;
+			margin: 10px 20px;
+			padding: 0px 0px;
+			border-radius: 5px;
+			border: 2px solid #fff;
+			border-left-color: #fd0000;
+		}
+		.footer {
+			margin: 20px 0px;
+			text-align: center;
+		}
+		.footer p {
+			font-size: 14px;
+			color: #969595;
+		}
+		.out-box p {
+			color: #5e5e5e;
+			font-size: 15px;
+			margin: 10px 30px;
+		}
+	</style>
+	<body>
+		<div class="main-body">
+			<div class="title-image">
+				<img
+					src="https://app.dev.accuknox.com/assets/AccuknoxLogo-YwLn2UsP.png"
+					alt="logo"
+				/>
+			</div>
+			<div class="title-text">
+				<h3>Monitor Alert : Access to sensitive files</h3>
+			</div>
+			<div class="main-content">
+				<ul>
+					<li><b>Sev :</b> 1</li>
+					<li><b>Policy-name :</b> harden-kubearmor-remote-services</li>
+					<li><b>Message :</b> Warning! access sensitive files detected!</li>
+					<li><b>Cluster :</b> saas-prod</li>
+					<li><b>Action :</b> Block</li>
+					<li><b>Result :</b> Permission Denied</li>
+				</ul>
+			</div>
+			<div class="out-box">
+				<p>
+					The Above Alert was triggerd 100 times during the duration of last 60
+					minutes, i.e, 10:45 PM IST - 11:45 PM IST
+				</p>
+				<div class="temp-button">
+					<button>View Alerts on Accuknox</button>
+				</div>
+				<p>THis alert was raised by tenant accuknoxrahulenv</p>
+			</div>
+			<div class="footer">
+				<p>
+					You're receiving this email because you have signed up for a new
+					account
+				</p>
+				<p>AccuKnox . 7772 Orogrande Place . Cupertino, CA 95014</p>
+			</div>
+		</div>
+	</body>
+</html>
